@@ -9,7 +9,9 @@
     "build": "webpack --config www/webpack.config.js --progress --colors -p",
     "dev": "webpack --watch --progress --profile --colors --hot --config www/webpack.config.js",
     "deploy": "godep save ./... && if [[ `git status --porcelain` ]]; then echo 'Push changes first!'; else git push heroku master; fi",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -51,7 +53,9 @@
     "stylus": "^0.54.2",
     "stylus-loader": "^2.0.0",
     "webpack": "^1.12.14",
-    "webpack-dev-server": "^1.14.1"
+    "webpack-dev-server": "^1.14.1",
+    "snyk": "^1.316.1"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "snyk": true
 }

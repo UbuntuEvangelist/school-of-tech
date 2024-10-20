@@ -48,7 +48,7 @@
     "redux-thunk": "^2.0.1",
     "socket.io-client": "^1.4.5",
     "style-loader": "^0.13.1",
-    "stylus": "^0.54.2",
+    "stylus": "^0.64.0",
     "stylus-loader": "^2.0.0",
     "webpack": "^1.12.14",
     "webpack-dev-server": "^1.14.1"
